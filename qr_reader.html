@@ -1,0 +1,46 @@
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>WebRTC - getUserMedia()</title>
+  <link rel="manifest" href="./manifest.json">
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.3.1/dist/jsQR.min.js"></script>
+  <style type="text/css">
+    /* for demo style */
+    .modal-overlay {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7)
+    }
+    /* for demo style */
+    .modal-overlay.is-show {
+        display: flex;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>WebRTC - APP</h1>
+  <video width="720px" autoplay playsinline></video>
+  <div style="display:none">
+    <canvas id="js-canvas"></canvas>
+  </div>
+  <div>
+      <!-- for demo -->
+      <button type="button" id="switch-cam" class="">Switch Camera</button>
+      <!-- for demo -->
+      <button type="button" id="stop-cam" class="">Stop Camera</button>
+  </div>
+
+</body>
+</html>
+
