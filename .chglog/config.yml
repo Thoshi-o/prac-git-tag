@@ -2,7 +2,11 @@ style: github
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
+<<<<<<< HEAD
   repository_url: https://github.com/Thoshi-o/prac-git-tag
+=======
+  repository_url: Y
+>>>>>>> master
 options:
   commits:
     # filters:
@@ -18,11 +22,18 @@ options:
     #   perf: Performance Improvements
     #   refactor: Code Refactoring
   header:
+<<<<<<< HEAD
     pattern: "^(\\w*)(?:\\(([\\w\\$\\.\\-\\*\\s]*)\\))?\\:\\s(.*)$"
     pattern_maps:
       - Type
       - Scope
       - Subject
+=======
+    pattern: "^((\\w+)\\s.*)$"
+    pattern_maps:
+      - Subject
+      - Type
+>>>>>>> master
   notes:
     keywords:
       - BREAKING CHANGE
