@@ -58,7 +58,7 @@ window.onload = () => {
             stopCameraStream()
           })
 
-  // TEST method requests HTTPS to HTTP
+  // TEST Method requests HTTPS to HTTP
   function requestHttpsToHttp () {
 
   }
